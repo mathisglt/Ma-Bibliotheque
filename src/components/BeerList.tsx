@@ -26,12 +26,12 @@ const BeerList: React.FC<BeerListProps> = ({ beers }) => {
     <div className="beer-list-container">
       <h2>Mes bières préférées</h2>
       <ul>
-        {beerList.map((beer, index) => (
-          <div key={index} className="beer-item">
-            <Beer name={beer} id={index} />
-            <button onClick={() => removeBeer(index)}>Supprimer</button>
-          </div>
-        ))}
+          {beerList.map((beer, index) => (
+              <div key={index} className="beer-item">
+                  <div className="beer-name"><Beer name={beer} id={index} />  </div>
+                  <button onClick={() => removeBeer(index)}>Supprimer</button>
+              </div>
+          ))}
       </ul>
       <input
         type="text"
