@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Beer from './Beer';
+import './BeerList.css';
 
 interface BeerListProps {
   beers: string[];
@@ -12,7 +13,7 @@ const BeerList: React.FC<BeerListProps> = ({ beers }) => {
   const addBeer = () => {
     if (newBeer.trim() !== '') {
       setBeerList([...beerList, newBeer]);
-      setNewBeer(''); 
+      setNewBeer('');
     }
   };
 
@@ -22,11 +23,11 @@ const BeerList: React.FC<BeerListProps> = ({ beers }) => {
   };
 
   return (
-    <div>
+    <div className="beer-list-container">
       <h2>Mes bières préférées</h2>
       <ul>
         {beerList.map((beer, index) => (
-          <div key={index}>
+          <div key={index} className="beer-item">
             <Beer name={beer} id={index} />
             <button onClick={() => removeBeer(index)}>Supprimer</button>
           </div>
@@ -38,7 +39,7 @@ const BeerList: React.FC<BeerListProps> = ({ beers }) => {
         onChange={(e) => setNewBeer(e.target.value)}
         placeholder="Nom de la bière"
       />
-      <button onClick={addBeer}>Ajouter une bière</button>
+      <button className="add-button" onClick={addBeer}>Ajouter une bière</button>
     </div>
   );
 };

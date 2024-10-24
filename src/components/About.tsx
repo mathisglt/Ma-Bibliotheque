@@ -1,10 +1,11 @@
 import React from 'react';
+import './About.css';
 
 const About: React.FC = () => {
   return (
-    <div>
+    <div className="about-container">
       <h2>Moi</h2>
-      <p>Projet crée par Gaultier Mathis</p>
+      <p>Projet créé par <span>Gaultier Mathis</span></p>
       <p>Module WE</p>
     </div>
   );

@@ -1,0 +1,85 @@
+.beer-list-container {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f7e8a4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Comic Sans MS', sans-serif;
+  }
+  
+  .beer-list-container h2 {
+    font-size: 2rem;
+    color: #6a4e35;
+    text-shadow: 2px 2px #e6ac62;
+    margin-bottom: 20px;
+  }
+  
+  .beer-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .beer-item button {
+    background-color: #ff6f61;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .beer-item button:hover {
+    background-color: #e63946;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    border: 2px solid #6a4e35;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 1rem;
+  }
+  
+  input[type="text"]::placeholder {
+    font-style: italic;
+  }
+  
+  .add-button {
+    background-color: #48c774;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .add-button:hover {
+    background-color: #36ab60;
+    transform: scale(1.05);
+  }
+  
+  .add-button:active {
+    transform: scale(0.95);
+  }
+  
+  .beer-item {
+    animation: slide-in 0.5s ease forwards;
+  }
+  
+  @keyframes slide-in {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
