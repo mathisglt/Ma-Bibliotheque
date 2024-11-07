@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
+import { BrowserRouter, Routes, Route, NavLink, Navigate } from "react-router-dom";
 import './App.css';
 import BeerList from './components/BeerList';
 import About from './components/About';
@@ -15,7 +15,7 @@ function App() {
             <NavLink to="/">Accueil</NavLink>
           </li>
           <li>
-            <NavLink to="/beerpage">Beer Page</NavLink>
+            <NavLink to="/beerlist">Beer Page</NavLink>
           </li>
           <li>
             <NavLink to="/about">About</NavLink>
@@ -24,8 +24,9 @@ function App() {
       </nav>
       <Routes>
         <Route path="/" element={<BeerList beers={[]} />} />
-        <Route path="/beerpage" element={<BeerList beers={[]} />} />
+        <Route path="/beerlist" element={<BeerList beers={[]} />} />
         <Route path="/about" element={<About />} />
+        <Route path="*" element={<Navigate to="/beerlist" replace />} />
       </Routes>
     </BrowserRouter>
   );
