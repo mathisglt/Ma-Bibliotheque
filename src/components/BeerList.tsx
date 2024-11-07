@@ -22,21 +22,28 @@ const BeerList: React.FC<BeerListProps> = ({ beers }) => {
     setBeerList(updatedList);
   };
 
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === 'Enter') {
+      addBeer();
+    }
+  };
+
   return (
     <div className="beer-list-container">
       <h2>Mes bières préférées</h2>
       <ul>
-          {beerList.map((beer, index) => (
-              <div key={index} className="beer-item">
-                  <div className="beer-name"><Beer name={beer} id={index} />  </div>
-                  <button onClick={() => removeBeer(index)}>Supprimer</button>
-              </div>
-          ))}
+        {beerList.map((beer, index) => (
+          <div key={index} className="beer-item">
+            <div className="beer-name"><Beer name={beer} id={index} /></div>
+            <button onClick={() => removeBeer(index)}>Supprimer</button>
+          </div>
+        ))}
       </ul>
       <input
         type="text"
         value={newBeer}
         onChange={(e) => setNewBeer(e.target.value)}
+        onKeyDown={handleKeyDown}
         placeholder="Nom de la bière"
       />
       <button className="add-button" onClick={addBeer}>Ajouter une bière</button>

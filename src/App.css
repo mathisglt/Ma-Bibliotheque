@@ -3,14 +3,22 @@ body {
   margin: 0;
   font-family: 'Arial', sans-serif;
   background-color: #f5f5f5;
+  background-image: url('~/public/beer-bar.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* Style de la navbar */
 nav {
-  background-color: #34495e;
+  background-color: rgba(255, 255, 255, 0.1); /* Fond semi-transparent */
   padding: 10px 20px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px); /* Applique un effet de flou */
+  -webkit-backdrop-filter: blur(10px); /* Support pour Safari */
+  border-radius: 8px; /* Bord arrondi pour un effet plus moderne */
 }
+
 
 /* Style des liens de la navbar */
 nav ul {
