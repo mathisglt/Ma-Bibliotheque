@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.45719887.css",
-    "main.js": "/static/js/main.af750430.js",
-    "static/js/453.88434cf5.chunk.js": "/static/js/453.88434cf5.chunk.js",
-    "static/media/beer-bar.png": "/static/media/beer-bar.28ca3dcec7627916ee93.png",
-    "index.html": "/index.html",
-    "main.45719887.css.map": "/static/css/main.45719887.css.map",
-    "main.af750430.js.map": "/static/js/main.af750430.js.map",
-    "453.88434cf5.chunk.js.map": "/static/js/453.88434cf5.chunk.js.map"
+    "main.css": "/WETPReact/static/css/main.687f6bc8.css",
+    "main.js": "/WETPReact/static/js/main.545ea2fb.js",
+    "static/js/453.88434cf5.chunk.js": "/WETPReact/static/js/453.88434cf5.chunk.js",
+    "static/media/beer-bar.png": "/WETPReact/static/media/beer-bar.28ca3dcec7627916ee93.png",
+    "index.html": "/WETPReact/index.html",
+    "main.687f6bc8.css.map": "/WETPReact/static/css/main.687f6bc8.css.map",
+    "main.545ea2fb.js.map": "/WETPReact/static/js/main.545ea2fb.js.map",
+    "453.88434cf5.chunk.js.map": "/WETPReact/static/js/453.88434cf5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.45719887.css",
-    "static/js/main.af750430.js"
+    "static/css/main.687f6bc8.css",
+    "static/js/main.545ea2fb.js"
   ]
 }
