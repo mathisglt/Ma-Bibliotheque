@@ -2,7 +2,7 @@
   max-width: 500px;
   margin: 20px auto;
   padding: 20px;
-  background-color: #f7c1a1;
+  background: linear-gradient(135deg, #1abc9c, #16a085);
   border-radius: 8px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
   font-family: 'Poppins', sans-serif;
@@ -13,10 +13,11 @@
 }
 
 .book-list-container h2 {
-  font-size: 1.8rem;
-  color: #4d4d4d;
-  margin-bottom: 16px;
-  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ecf0f1;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  animation: fadeInDown 1s ease;
 }
 
 .book-list {
@@ -81,7 +82,7 @@ select::placeholder {
 }
 
 .add-button {
-  background-color: #2a9d8f;
+  background-color: #21867a;
   border: none;
   border-radius: 4px;
   padding: 10px 18px;
@@ -93,7 +94,7 @@ select::placeholder {
 }
 
 .add-button:hover {
-  background-color: #21867a;
+  background-color: #18766b;
   transform: scale(1.05);
 }
 
