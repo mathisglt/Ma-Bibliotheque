@@ -1,46 +1,31 @@
-# Getting Started with Create React App
+# 📚 Ma Bibliothèque
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Ma Bibliothèque** est une application de gestion de collection de livres construite avec React. Elle vous permet de gérer votre bibliothèque personnelle en ajoutant, modifiant et supprimant des livres, tout en suivant les informations comme l'auteur, le genre et la note.
 
-## Available Scripts
+## 🚀 Fonctionnalités
 
-In the project directory, you can run:
+- **Ajouter un livre** : Vous pouvez ajouter un livre à votre collection avec son titre, auteur, genre et note.
+- **Supprimer un livre** : Vous pouvez supprimer un livre de votre collection.
+- **Gestion des notes** : Attribuez une note (de 0 à 10) à chaque livre.
+- **Page "À propos"** : Découvrez des informations sur l'auteur du projet et accédez à son GitHub.
 
-### `npm start`
+## 🛠️ Technologies utilisées
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **Frontend** : React.js (avec Hooks et Typescript)
+- **Routing** : React Router Dom
+- **CSS** : Styles personnalisés dans `App.css`, `BookList.css`, et `About.css`
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 📂 Structure du projet
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+```plaintext
+Ma-Bibliotheque/
+├── src/
+│   ├── components/
+│   │   ├── About.tsx          # Composant "À propos"
+│   │   ├── BookList.tsx       # Composant de gestion des livres
+│   ├── App.tsx                # Point d'entrée de l'application
+│   ├── App.css                # Styles globaux
+├── public/                    # Dossier public
+│   ├── index.html             # Fichier HTML principal
+├── package.json               # Dépendances et scripts
+└── README.md                  # Documentation
