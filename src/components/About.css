@@ -4,7 +4,7 @@
   max-width: 600px;
   margin: 50px auto;
   padding: 30px;
-  background: linear-gradient(135deg, #1abc9c, #16a085);
+  background: linear-gradient(145deg, #1e2024, #22262e);
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   text-align: center;
@@ -43,7 +43,7 @@
 
 .cta-button {
   background: #ffffff;
-  color: #1abc9c;
+  color: black;
   border: none;
   padding: 12px 25px;
   font-size: 1rem;
@@ -55,7 +55,7 @@
 }
 
 .cta-button:hover {
-  background: #002a22;
+  background: #161616;
   color: #ffffff;
   box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
 }

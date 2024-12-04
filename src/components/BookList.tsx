@@ -10,10 +10,10 @@ const BookList: React.FC<BookListProps> = ({ books }) => {
   const [newBook, setNewBook] = useState('');
   const [author, setAuthor] = useState('');
   const [genre, setGenre] = useState('');
-  const [rating, setRating] = useState<number | string>('');
+  const [rating, setRating] = useState<number | ''>('');
 
   const addBook = () => {
-    if (newBook.trim() !== '' && author.trim() !== '') {
+    if (newBook.trim() && author.trim()) {
       const newBookData = {
         title: newBook,
         author,
@@ -39,14 +39,9 @@ const BookList: React.FC<BookListProps> = ({ books }) => {
     }
   };
 
-  const handleRatingChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    setRating(e.target.value);
-  };
-
   return (
     <div className="book-list-container">
-      <h2>Ma Collection de Livres</h2>
-
+      <h1>📚 Ma Collection de Livres</h1>
       <div className="add-book-container">
         <input
           type="text"
@@ -69,12 +64,12 @@ const BookList: React.FC<BookListProps> = ({ books }) => {
         />
         <select
           value={rating}
-          onChange={handleRatingChange}
+          onChange={(e) => setRating(e.target.value === '' ? '' : parseInt(e.target.value, 10))}
           aria-label="Note du livre"
         >
-          <option value="">Note (Facultatif)</option>
+          <option value="">Note (0-10)</option>
           {[...Array(11)].map((_, i) => (
-            <option key={i} value={i}>{i}</option>
+            <option key={i} value={i}>{i} ⭐</option>
           ))}
         </select>
         <button className="add-button" onClick={addBook}>Ajouter un livre</button>
@@ -82,15 +77,17 @@ const BookList: React.FC<BookListProps> = ({ books }) => {
 
       <ul className="book-list">
         {bookList.map((book, index) => (
-          <div key={index} className="book-item">
+          <li key={index} className="book-item">
             <div className="book-details">
               <h3>{book.title}</h3>
               <p><strong>Auteur :</strong> {book.author}</p>
               {book.genre && <p><strong>Genre :</strong> {book.genre}</p>}
-              {book.rating && <p><strong>Note :</strong> {book.rating} ⭐</p>}
+              {book.rating !== undefined && (
+                <p><strong>Note :</strong> {book.rating} ⭐</p>
+              )}
             </div>
-            <button onClick={() => removeBook(index)}>Supprimer</button>
-          </div>
+            <button onClick={() => removeBook(index)}>❌</button>
+          </li>
         ))}
       </ul>
     </div>
