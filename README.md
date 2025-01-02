@@ -34,3 +34,32 @@ Ma-Bibliotheque/
 │   ├── index.html             # Fichier HTML principal
 ├── package.json               # Dépendances et scripts
 └── README.md                  # Documentation
+```
+
+## 🖥️ Installation et démarrage du projet
+
+Suivez les étapes ci-dessous pour cloner ce projet et le faire fonctionner sur votre machine locale.
+
+  1. Clonez le dépôt Git en utilisant la commande suivante :
+   
+   ```bash
+   git clone https://github.com/mathisglt/Ma-Bibliotheque
+   ```
+   
+   2. Rendez vous dans le dossier
+   
+   ```bash
+   cd .\Ma-Bibliotheque\
+   ```
+   
+   3. Installez les dépendances
+   
+   ```bash
+   npm i 
+   ```
+   
+   4. Enfin, démarrer le projet
+   
+   ```bash
+   npm run start
+   ```
