@@ -7,7 +7,7 @@ Le thème du sujet (Bières) a été modifié pour que le projet figure dans le 
 
 Elle vous permet de gérer votre bibliothèque personnelle en ajoutant, modifiant et supprimant des livres, tout en suivant les informations comme l'auteur, le genre et la note.
 
-Existe aussi en version déployée : https://wetpreact.amadev.fr/biblio
+Existe aussi en version déployée : https://wetpreact.amadev.fr
 
 ## 🚀 Fonctionnalités
 
