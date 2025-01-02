@@ -7,6 +7,8 @@ Le thème du sujet (Bières) a été modifié pour que le projet figure dans le 
 
 Elle vous permet de gérer votre bibliothèque personnelle en ajoutant, modifiant et supprimant des livres, tout en suivant les informations comme l'auteur, le genre et la note.
 
+Existe aussi en version déployée : https://wetpreact.amadev.fr/biblio
+
 ## 🚀 Fonctionnalités
 
 - **Ajouter un livre** : Vous pouvez ajouter un livre à votre collection avec son titre, auteur, genre et note.
@@ -49,7 +51,7 @@ Suivez les étapes ci-dessous pour cloner ce projet et le faire fonctionner sur 
    2. Rendez vous dans le dossier
    
    ```bash
-   cd .\Ma-Bibliotheque\
+   cd .\ToDoList\
    ```
    
    3. Installez les dépendances
@@ -61,5 +63,5 @@ Suivez les étapes ci-dessous pour cloner ce projet et le faire fonctionner sur 
    4. Enfin, démarrer le projet
    
    ```bash
-   npm run start
+   npm run dev
    ```
