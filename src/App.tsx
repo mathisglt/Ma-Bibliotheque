@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route, NavLink, Navigate } from "react-router-dom";
+import { HashRouter, Routes, Route, NavLink, Navigate } from "react-router-dom";
 import './App.css';
 import About from './components/About';
 import BookList from './components/BookList';
@@ -7,7 +7,7 @@ import BookList from './components/BookList';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <nav>
         <ul>
           <li>
@@ -23,7 +23,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="*" element={<Navigate to="/biblio" replace />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
