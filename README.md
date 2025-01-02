@@ -1,6 +1,7 @@
 # 📚 Ma Bibliothèque
 
 **Ma Bibliothèque** est une application de gestion de collection de livres construite avec React. 
+
 Projet effectué pour l'UE WE du Master IL de l'ISTIC.
 
 Elle vous permet de gérer votre bibliothèque personnelle en ajoutant, modifiant et supprimant des livres, tout en suivant les informations comme l'auteur, le genre et la note.
